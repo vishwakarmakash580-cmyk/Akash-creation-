@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akash Creation - Thumbnail Editing</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    nav h1 {
+      color: #ff4d4d;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff4d4d;
+    }
+
+    section {
+      padding: 6rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 7rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #222;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+      margin: 1rem 0;
+    }
+
+    .hero button {
+      background-color: #ff4d4d;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #ff3333;
+    }
+
+    .services {
+      text-align: center;
+    }
+
+    .services h2 {
+      color: #ff4d4d;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .service-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .portfolio {
+      text-align: center;
+    }
+
+    .portfolio h2 {
+      color: #ff4d4d;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: #ff4d4d;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .contact p {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Akash Creation</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome to Akash Creation</h2>
+    <p>Your one-stop place for stunning thumbnail designs that grab attention!</p>
+    <a href="https://wa.me/917355205778" target="_blank">
+      <button>Get a Quote 💬</button>
+    </a>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-box">
+      <div class="service">
+        <h3>YouTube Thumbnail Design</h3>
+        <p>Eye-catching thumbnails that boost clicks and views.</p>
+      </div>
+      <div class="service">
+        <h3>Custom Thumbnail Requests</h3>
+        <p>Get unique thumbnails designed just for your content.</p>
+      </div>
+      <div class="service">
+        <h3>Photo Retouch & Editing</h3>
+        <p>Enhance your visuals with professional retouching.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x250?text=Sample+Thumbnail+1" alt="Thumbnail 1">
+      <img src="https://via.placeholder.com/400x250?text=Sample+Thumbnail+2" alt="Thumbnail 2">
+      <img src="https://via.placeholder.com/400x250?text=Sample+Thumbnail+3" alt="Thumbnail 3">
+      <img src="https://via.placeholder.com/400x250?text=Sample+Thumbnail+4" alt="Thumbnail 4">
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📸 Instagram: <a href="https://instagram.com/ash.v16" target="_blank">@ash.v16</a></p>
+    <p>📧 Email: <a href="mailto:Vishwakarmakash580@gmail.com">Vishwakarmakash580@gmail.com</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/917355205778" target="_blank">Chat Now</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Akash Creation | Designed with ❤️ by Akash Vishwakarma</p>
+  </footer>
+
+  <script>
+    // Smooth scroll animation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
